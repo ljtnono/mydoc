@@ -2,4 +2,4 @@
     - [java](style/java)
 
 - 开发指南
-    - [命名宝典](doc/naming)
+    <!-- - [命名宝典](doc/naming) -->
