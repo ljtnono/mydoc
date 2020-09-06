@@ -1,5 +1,5 @@
 - 代码规范
     - [java](style/java)
     - [restful](style/restful)
-- 日志
-    - [使用jenkins构建maven项目](style/日志/使用jenkins构建maven项目)
+- 博客
+    - [使用jenkins构建maven项目](style/博客/使用jenkins构建maven项目)
