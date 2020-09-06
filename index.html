@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="app">loading...</div>
+  <div id="app">loading...</div>
   <script>
     window.$docsify = {
       auto2top: true,
@@ -28,6 +28,13 @@
         paths: 'auto',
         placeholder: '搜索'
       },
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      disqus: 'shortname',
       subMaxLevel: 2
     }
   </script>
@@ -39,6 +46,8 @@
   <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
 
 </html>
