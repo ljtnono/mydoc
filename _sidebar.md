@@ -53,7 +53,7 @@
     - [git常用命令](docs/16353971256261)
     - [git管理规范](docs/16353971256310)
     - [gitlab环境搭建](docs/16353971256360)
-    - [Git多用户配置](docs/16521099489707)
+    - [git多用户配置](docs/16521099489707)
 - elasticsearch
     - [elasticsearch常用搜索命令](docs/16353971368920)
     - [elasticsearch核心概念](docs/16353971368972)
