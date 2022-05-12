@@ -23,6 +23,7 @@
     - [MySQL8 主从环境搭建](docs/16413491382357)
     - [MySQL8 使用Apache Sharding sphere 搭建读写分离](docs/16418246314342)
     - [MySQL高级教程（尚硅谷宋红康）](docs/16421754723998)
+    - [MySQL5.7安装教程](docs/16523227516624)
 - mybatis
     - [Mybatis3源代码深度解析-江荣波](docs/16353970233481)
     - [Mybatis日常使用总结](docs/16366802495179)
