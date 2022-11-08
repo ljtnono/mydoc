@@ -2,10 +2,13 @@
     - [WebSocket详解](docs/16353969509607)
 - svn
     - [SVN常用命令](docs/16353969627658)
-- spring源码阅读
+- spring
     - [springmvc工作流程](docs/16353969777611)
     - [springboot配置文件加载顺序](docs/16353969777668)
-    - [Spring事务原理解析](docs/16573379608222)
+    - [spring事务原理解析](docs/16573379608222)
+    - [spring security oauth2原理分析](docs/16675563060364)
+    - [spring security 原理分析](docs/16677894299735)
+    - [spring 源码解析](docs/16677896667871)
 - redis
     - [redis面试题](docs/16353969916197)
 - python
@@ -20,25 +23,24 @@
     - [MySQL常用优化技巧](docs/16376365615424)
     - [MySQL8 主从环境搭建](docs/16413491382357)
     - [MySQL高级教程（尚硅谷宋红康）](docs/16421754723998)
-    - [MySQL基础教程（尚硅谷宋红康）](docs/16567236649968)
+    - [MySQL是怎样运行的（从根上儿理解MySQL）读书笔记](docs/16567236649968)
 - mybatis
     - [Mybatis3源代码深度解析-江荣波](docs/16353970233481)
 - MacOS
     - [Homebrew常用命令](docs/16353970680332)
     - [MacOS日常使用总结](docs/16359354598729)
+    - [Alacritty 配置指南](docs/16678130846738)
 - linux
     - [linux日常运维总结](docs/16353970885101)
     - [linux常用命令](docs/16353970885153)
     - [linux发行版安装教程](docs/16353970885192)
     - [vim常用命令](docs/16353970885299)
-    - [centos7 搭建openvpn服务器](docs/16584622302634)
+    - [neovim 配置](docs/16678279517536)
 - k8s
     - [尚硅谷Kubernetes教程（k8s入门到精通）学习笔记](docs/16353970980735)
     - [k8s安装教程（基于kubeadm安装方式和flannel网络插件）](docs/16353970980876)
     - [k8s核心组件与架构](docs/16353970980941)
-    - [k8s安装ingress-nginx](docs/16547903784810)
-    - [KubeSphere 安装教程（ALL IN ONE）](docs/16653141016576)
-    - [KubeSphere 安装教程（在现有k8s集群上安装）](docs/16653798036757)
+    - [nginx ingress 安装教程](docs/16677147696711)
 - JVM
     - [JVM垃圾回收概述](docs/16353971081307)
     - [JVM垃圾回收器](docs/16353971081439)
@@ -83,6 +85,8 @@
     - [frp搭建内网穿透](docs/16533695658877)
 - 前端
     - [Waline评论系统安装](docs/16553111223969)
+    - [Babel学习笔记](docs/16676541049093)
+    - [ES6学习](docs/16676541374997)
 - 网络协议
     - [彻底搞定网络协议](docs/16572657698296)
 - minio
