@@ -40,6 +40,7 @@
     - [neovim 配置](docs/16678279517536)
     - [Alacritty 配置指南](docs/16680649483599)
     - [Manjaro安装教程](docs/16696858893440)
+    - [Fedora安装教程](docs/16696920823215)
 - k8s
     - [尚硅谷Kubernetes教程（k8s入门到精通）学习笔记](docs/16353970980735)
     - [k8s安装教程（基于kubeadm安装方式和flannel网络插件）](docs/16353970980876)
