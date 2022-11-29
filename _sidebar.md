@@ -9,6 +9,8 @@
     - [spring security oauth2原理分析](docs/16675563060364)
     - [spring security 原理分析](docs/16677894299735)
     - [spring 源码解析](docs/16677896667871)
+    - [springboot 原理分析](docs/16684946668076)
+    - [mini-spring项目学习](docs/16689951956651)
 - redis
     - [redis面试题](docs/16353969916197)
 - python
@@ -33,9 +35,11 @@
 - linux
     - [linux日常运维总结](docs/16353970885101)
     - [linux常用命令](docs/16353970885153)
-    - [linux发行版安装教程](docs/16353970885192)
+    - [Debian安装教程](docs/16353970885192)
     - [vim常用命令](docs/16353970885299)
     - [neovim 配置](docs/16678279517536)
+    - [Alacritty 配置指南](docs/16680649483599)
+    - [Manjaro安装教程](docs/16696858893440)
 - k8s
     - [尚硅谷Kubernetes教程（k8s入门到精通）学习笔记](docs/16353970980735)
     - [k8s安装教程（基于kubeadm安装方式和flannel网络插件）](docs/16353970980876)
@@ -87,6 +91,7 @@
     - [Waline评论系统安装](docs/16553111223969)
     - [Babel学习笔记](docs/16676541049093)
     - [ES6学习](docs/16676541374997)
+    - [CSS小技巧](docs/16681305242961)
 - 网络协议
     - [彻底搞定网络协议](docs/16572657698296)
 - minio
