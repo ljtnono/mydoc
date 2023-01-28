@@ -46,6 +46,7 @@
     - [k8s核心组件与架构](docs/16353970980941)
     - [nginx ingress 安装教程](docs/16677147696711)
     - [使用minikube安装k8s集群](docs/16732485354692)
+    - [安装kubernetes-dashboard面板](docs/16746480495097)
 - JVM
     - [JVM垃圾回收概述](docs/16353971081307)
     - [JVM垃圾回收器](docs/16353971081439)
