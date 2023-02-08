@@ -38,7 +38,7 @@
     - [Debian安装教程](docs/16353970885192)
     - [vim常用命令](docs/16353970885299)
     - [neovim 配置](docs/16678279517536)
-    - [Alacritty 配置指南](docs/16680649483599)
+    - [linux上安装Alacritty教程](docs/16680649483599)
     - [Manjaro安装教程](docs/16696858893440)
     - [Fedora安装教程](docs/16696920823215)
 - k8s
