@@ -53,7 +53,7 @@
   <script src="https://rawgit.com/qhh0205/78e9e0b1f3114db6737f3ed8cdd51d3a/raw/3894c5be5aa2378336b1f5ee0f296fa0b22d06e9/md5.min.js"></script>
   <script>
     const gitalk = new Gitalk({
-      id: md5(location.pathname),
+      id: md5(window.location.href),
       clientID: '0a77d58877159d24f418',
       clientSecret: '89f21e61a9776b0edf2f8eb4e6d4bf9c37b6fc6c',
       repo: 'mydoc',
