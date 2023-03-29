@@ -3,6 +3,7 @@
   - [MacOS日常使用总结](docs/日常开发/MacOS日常使用总结)
   - [SVN常用命令](docs/日常开发/SVN常用命令)
   - [git多用户配置](docs/日常开发/git多用户配置)
+  - [idea常用快捷键](docs/日常开发/idea常用快捷键)
   - [日常问题总结](docs/日常开发/日常问题总结)
   - [linux日常运维总结](docs/日常开发/linux日常运维总结)
   - [git常用命令](docs/日常开发/git常用命令)
