@@ -1,0 +1,4 @@
+  - [k8s安装教程](docs/k8s/k8s安装教程)
+  - [安装kubernetes-dashboard](docs/k8s/安装kubernetes-dashboard)
+  - [nginx-ingress安装教程](docs/k8s/nginx-ingress安装教程)
+  - [使用minikube安装k8s集群](docs/k8s/使用minikube安装k8s集群)

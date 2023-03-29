@@ -1,0 +1,5 @@
+  - [linux上安装Alacritty教程](docs/linux/linux上安装Alacritty教程)
+  - [Fedora安装教程](docs/linux/Fedora安装教程)
+  - [Alacritty配置指南](docs/linux/Alacritty配置指南)
+  - [Manjaro安装教程](docs/linux/Manjaro安装教程)
+  - [Debian安装教程](docs/linux/Debian安装教程)

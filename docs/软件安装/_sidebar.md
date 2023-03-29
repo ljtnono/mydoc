@@ -1,0 +1,4 @@
+  - [jira安装](docs/软件安装/jira安装)
+  - [confluence破解安装](docs/软件安装/confluence破解安装)
+  - [wikijs安装](docs/软件安装/wikijs安装)
+  - [DBeaver22.1.0安装](docs/软件安装/DBeaver22.1.0安装)
