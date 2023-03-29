@@ -55,8 +55,7 @@
 
   <script>
     const gitalk = new Gitalk({
-      title: location.hash.match(/#(.*?)([?]|$)/)[1],
-      id: location.hash.match(/#(.*?)([?]|$)/)[1],
+      id: md5(window.location.hash),
       clientID: '0a77d58877159d24f418',
       clientSecret: '89f21e61a9776b0edf2f8eb4e6d4bf9c37b6fc6c',
       repo: 'mydoc',
