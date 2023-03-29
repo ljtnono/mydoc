@@ -1,28 +1,27 @@
-- 树莓派
   - [树莓派搭建NAS教程](docs/树莓派/树莓派搭建NAS教程)
-- 网络协议
+
   - [彻底搞定网络协议](docs/网络协议/彻底搞定网络协议)
   - [WebSocket详解](docs/网络协议/WebSocket详解)
-- c和c++
+
   - [CMake基本语法](docs/c和c++/CMake基本语法)
   - [gcc编译详解](docs/c和c++/gcc编译详解)
-- docker
+
   - [docker使用总结](docs/docker/docker使用总结)
-- python
+
   - [Python从入门到精通](docs/python/Python从入门到精通)
   - [Python日常使用总结](docs/python/Python日常使用总结)
-- mybatis
+
   - [Mybatis3源代码深度解析-江荣波](docs/mybatis/Mybatis3源代码深度解析-江荣波)
-- jdk
+
   - [集合框架源码详解](docs/jdk/集合框架源码详解)
   - [JDK源码阅读建议顺序](docs/jdk/JDK源码阅读建议顺序)
   - [java.lang包源码阅读](docs/jdk/java.lang包源码阅读)
-- k8s
+
   - [k8s安装教程](docs/k8s/k8s安装教程)
   - [安装kubernetes-dashboard](docs/k8s/安装kubernetes-dashboard)
   - [nginx-ingress安装教程](docs/k8s/nginx-ingress安装教程)
   - [使用minikube安装k8s集群](docs/k8s/使用minikube安装k8s集群)
-- jvm
+
   - [引用和可触及性的强度](docs/jvm/引用和可触及性的强度)
   - [JVM垃圾回收器](docs/jvm/JVM垃圾回收器)
   - [Class装载系统](docs/jvm/Class装载系统)
@@ -32,17 +31,17 @@
   - [JVM内存区域划分](docs/jvm/JVM内存区域划分)
   - [JVM垃圾回收概述](docs/jvm/JVM垃圾回收概述)
   - [常见的垃圾回收器介绍](docs/jvm/常见的垃圾回收器介绍)
-- 消息中间件
+
   - [黑马程序员RocketMQ系统精讲](docs/消息中间件/黑马程序员RocketMQ系统精讲)
   - [RocketMQ安装教程](docs/消息中间件/RocketMQ安装教程)
-- 微服务
+
   - [SpringCloud与Docker微服务架构实战（周立）学习笔记](docs/微服务/SpringCloud与Docker微服务架构实战（周立）学习笔记)
   - [CAP原理理解](docs/微服务/CAP原理理解)
-- minio
+
   - [minio数据迁移](docs/minio/minio数据迁移)
-- 面试
+
   - [redis面试题](docs/面试/redis面试题)
-- 日常开发
+
   - [gitlab环境搭建](docs/日常开发/gitlab环境搭建)
   - [vim常用命令](docs/日常开发/vim常用命令)
   - [MacOS日常使用总结](docs/日常开发/MacOS日常使用总结)
@@ -54,18 +53,18 @@
   - [linux常用命令](docs/日常开发/linux常用命令)
   - [Homebrew常用命令](docs/日常开发/Homebrew常用命令)
   - [git管理规范](docs/日常开发/git管理规范)
-- 软件安装
+
   - [jira安装](docs/软件安装/jira安装)
   - [confluence破解安装](docs/软件安装/confluence破解安装)
   - [wikijs安装](docs/软件安装/wikijs安装)
   - [DBeaver22.1.0安装](docs/软件安装/DBeaver22.1.0安装)
-- linux
+
   - [linux上安装Alacritty教程](docs/linux/linux上安装Alacritty教程)
   - [Fedora安装教程](docs/linux/Fedora安装教程)
   - [Alacritty配置指南](docs/linux/Alacritty配置指南)
   - [Manjaro安装教程](docs/linux/Manjaro安装教程)
   - [Debian安装教程](docs/linux/Debian安装教程)
-- mysql
+
   - [数据库设计规范](docs/mysql/数据库设计规范)
   - [MySQL安装教程](docs/mysql/MySQL安装教程)
   - [MySQL是怎样运行的（从根上儿理解MySQL）读书笔记](docs/mysql/MySQL是怎样运行的（从根上儿理解MySQL）读书笔记)
@@ -74,14 +73,14 @@
   - [MySQL高级教程（尚硅谷宋红康）](docs/mysql/MySQL高级教程（尚硅谷宋红康）)
   - [MySQL常用优化技巧](docs/mysql/MySQL常用优化技巧)
   - [soar环境搭建](docs/mysql/soar环境搭建)
-- 并发
+
   - [Java并发编程：核心方法与框架学习笔记](docs/并发/Java并发编程：核心方法与框架学习笔记)
-- 设计模式
+
   - [设计模式详解之二](docs/设计模式/设计模式详解之二)
   - [设计模式详解之一](docs/设计模式/设计模式详解之一)
-- elasticsearch
+
   - [elasticsearch核心概念](docs/elasticsearch/elasticsearch核心概念)
-- spring
+
   - [spring-security-oauth2原理分析](docs/spring/spring-security-oauth2原理分析)
   - [mini-spring项目学习](docs/spring/mini-spring项目学习)
   - [springboot原理分析](docs/spring/springboot原理分析)
