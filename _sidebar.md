@@ -13,7 +13,7 @@
 - [面试](docs/面试/redis面试题)
 - [日常开发](docs/日常开发/gitlab环境搭建)
 - [软件安装](docs/软件安装/jira安装)
-- [linux](docs/linux/linux上安装Alacritty教程)
+- [linux](docs/linux/日常使用linux作为主力机总结)
 - [mysql](docs/mysql/数据库设计规范)
 - [并发](docs/并发/Java并发编程：核心方法与框架学习笔记)
 - [设计模式](docs/设计模式/设计模式详解之二)

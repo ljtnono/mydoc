@@ -1,3 +1,4 @@
+  - [日常使用linux作为主力机总结](docs/linux/日常使用linux作为主力机总结)
   - [linux上安装Alacritty教程](docs/linux/linux上安装Alacritty教程)
   - [Fedora安装教程](docs/linux/Fedora安装教程)
   - [Alacritty配置指南](docs/linux/Alacritty配置指南)
