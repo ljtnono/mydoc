@@ -8,11 +8,11 @@
 
 # 登陆到主服务器的mysql，并执行如下语句创建用户，授予权限：
 
-CREATE USER '<username>'@'%' INDENTIFIED BY '<password>';
+CREATE USER '<username>'@'%' IDENTIFIED BY '<password>';
 
 GRANT ALL ON *.* TO '<username>'@'%';
 
-FLUSH PRIVILETES;
+FLUSH PRIVILEGES;
 
 ```
 

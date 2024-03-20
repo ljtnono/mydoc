@@ -746,7 +746,7 @@ done
 其中 {AQAAABl5pYu3vTzodW48IBDAreNBl6JJtKfpqpgw==} 就是在.jenkins/credentials.xml 中找到的加密口令.注意，一定要带上 {}，否则只会反会 null 值。
 
 
-## ntpdate同步时间
+## 联网同步时间
 
 ```bash
 
@@ -756,6 +756,21 @@ ntpdate time1.aliyun.com
 
 ```
 
+## 脱机同步硬件时间
+
+```bash
+#输入tzselect，进入时区选择，然后依次选择Asia>China>Beijing Time，选择时输入相应的数字即可。最后对信息确认Yes。
+sudo tzselect
+#复制文件到本地时间内：输入sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+#防止出错先执行命令
+timedatectl set-ntp no
+timedatectl set-time '2088-12-18 18:08:08'
+sudo hwclock -w
+#将系统时钟与硬件时钟同步：
+sudo hwclock --hctosys
+```
 
 ## 安装docker-compose
 
@@ -823,4 +838,143 @@ service crond reload
 # 查看crontab服务状态
 service crond status
 
+```
+
+## influxdb导出和导入文件
+
+导出命令的语法格式：
+
+```txt
+
+# influx_inspect export --help
+Exports TSM files into InfluxDB line protocol format.
+
+Usage: influx_inspect export [flags]
+  -compress
+        Compress the output
+  -database string
+        Optional: the database to export
+  -datadir string
+        Data storage path (default "/root/.influxdb/data")
+  -end string
+        Optional: the end time to export (RFC3339 format)
+  -out string
+        Destination file to export to (default "/root/.influxdb/export")
+  -retention string
+        Optional: the retention policy to export (requires -database)
+  -start string
+        Optional: the start time to export (RFC3339 format)
+  -waldir string
+        WAL storage path (default "/root/.influxdb/wal")
+
+```
+
+数据导出demo：
+
+```txt
+
+influx_inspect export -datadir "/var/lib/influxdb/data" -waldir "/var/lib/influxdb/wal" -out "influxdb_dump_out" -database "opsultra" -start "2021-09-10T00:00:00Z"
+其中：
+  datadir: influxdb的数据存放位置
+  waldir: influxdb的wal目录
+  out: 输出文件
+  database: 导出的db名称
+  start: 从什么时间导出
+
+```
+
+导入的命令语法：
+
+```txt
+# influx -import --help
+Usage of influx:
+  -version
+       Display the version and exit.
+  -host 'host name'
+       Host to connect to.
+  -port 'port #'
+       Port to connect to.
+  -socket 'unix domain socket'
+       Unix socket to connect to.
+  -database 'database name'
+       Database to connect to the server.
+  -password 'password'
+      Password to connect to the server.  Leaving blank will prompt for password (--password '').
+  -username 'username'
+       Username to connect to the server.
+  -ssl
+        Use https for requests.
+  -unsafeSsl
+        Set this when connecting to the cluster using https and not use SSL verification.
+  -execute 'command'
+       Execute command and quit.
+  -format 'json|csv|column'
+       Format specifies the format of the server responses:  json, csv, or column.
+  -precision 'rfc3339|h|m|s|ms|u|ns'
+       Precision specifies the format of the timestamp:  rfc3339, h, m, s, ms, u or ns.
+  -consistency 'any|one|quorum|all'
+       Set write consistency level: any, one, quorum, or all
+  -pretty
+       Turns on pretty print for the json format.
+  -import
+       Import a previous database export from file
+  -pps
+       How many points per second the import will allow.  By default it is zero and will not throttle importing.
+  -path
+       Path to file to import
+  -compressed
+       Set to true if the import file is compressed
+
+
+```
+
+数据导入demo：
+
+```txt
+
+# influx -import -path=/root/influxdb_dump_out -precision=ns
+
+其中：
+  import: 标识导入
+  path: 导入文件
+  precision: 导入的数据时间精度
+
+```
+
+## influxdb常用命令
+
+```bash
+# 登录
+influx -username xxx -password xxx
+# 删除数据库
+DROP DATABASE <database>
+```
+
+## 普通用户加入到docker用户组
+
+在debian12等系统上，普通用户需要使用sudo才能访问docker用户组，为了方便可以将普通用户加入到docker用户组，这样就可以不用每次输入sudo了。
+
+1. 创建docker用户组
+
+```bash
+ sudo groupadd docker
+```
+
+2. 应用用户加入docker用户组
+
+```bash
+ sudo usermod -aG docker ${USER}
+```
+
+3. 重启docker服务
+
+```bash
+ sudo systemctl restart docker
+```
+
+4. 切换或者退出当前账户再从新登入
+
+```bash
+su root             # 切换到root用户
+su ${USER}          # 再切换到原来的应用用户以上配置才生效
 ```

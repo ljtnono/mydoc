@@ -110,3 +110,29 @@ uname -r
 ```bash
 
 ```
+
+
+## 配置相关
+
+### 设置取消功能键
+
+向 /sys/module/hid_apple/parameters/fnmode 文件中写入不同的值，可切换不同的模式：
+
+```bash
+echo 2 > /sys/module/hid_apple/parameters/fnmode
+```
+
+* 0  禁用功能键，按 ‘Fn’ + ‘F8’ 等同于 F8
+* 1  默认功能键，按 ‘F8’ 触发功能键 (play/pause)，按 ‘Fn’ + ‘F8’ 触发 F8 键
+* 2  默认非功能键，按 ‘F8’ 触发 F8 键，按 ‘Fn’ + ‘F8’ 触发功能键 (play/pause)
+
+以上方法重启后失效，如果要让配置永久生效：
+
+```bash
+# vi /etc/modprobe.d/hid_apple.conf
+options hid_apple fnmode=2
+
+# 在您触发将配置复制到 initramfs 引导文件之前，这不会执行任何操作。这可以通过终止 update-initramfs 服务来完成。
+sudo update-initramfs -u -k all
+```
+

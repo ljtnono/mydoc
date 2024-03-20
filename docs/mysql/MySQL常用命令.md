@@ -1,12 +1,27 @@
 # MySQL常用命令
 
-## 设置不校验外键
+## SQL脚本执行范式
 
 ```mysql
+# 选择数据库
+USE DATABASE_NAME;
+# 脚本使用utf8mb4编码
+SET NAMES utf8mb4;
 # 关闭外键校验
-SET FOREIGN_KEY_CHECKS=0;
+SET FOREIGN_KEY_CHECKS = 0;
+# 关闭自动提交
+SET AUTOCOMMIT = 0;
+# 手动开启事务
+START TRANSACTION;
+
+-- SQL 脚本内容
+
+# 提交
+COMMIT;
 # 打开外键校验
-SET FOREIGN_KEY_CHECKS=1;
+SET FOREIGN_KEY_CHECKS = 1;
+# 打开自动提交
+SET AUTOCOMMIT = 1;
 ```
 
 ## 设置主键自增值
@@ -95,6 +110,16 @@ BEGIN
 	CLOSE idx_cursor;
 END$$
 DELIMITER ;
+```
 
+## 解决metadata lock问题
+
+```mysql
+-- 获取到metadata lock的相关ThreadID
+SELECT * FROM performance_schema.metadata_locks;
+-- 查看线程信息
+SELECT * FROM performance_schema.threads;
+-- 杀死相关线程
+kill pid;
 ```
 
